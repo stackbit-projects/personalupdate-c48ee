@@ -1,0 +1,100 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    exclude:
+      - 2016-01-23-indigo-jekyll-theme.markdown
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: datetime
+        name: date
+        label: Date
+      - type: image
+        name: image
+        label: Image
+      - type: boolean
+        name: headerImage
+        label: Header Image
+      - type: list
+        name: tag
+        label: Tag
+        items:
+          type: string
+      - type: string
+        name: category
+        label: Category
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: description
+        label: Description
+      - type: boolean
+        name: star
+        label: Star
+  post_1:
+    type: page
+    label: Post 1
+    folder: _posts
+    match:
+      - 2016-01-23-indigo-jekyll-theme.markdown
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: tag
+        label: Tag
+      - type: image
+        name: image
+        label: Image
+      - type: boolean
+        name: headerImage
+        label: Header Image
+      - type: boolean
+        name: projects
+        label: Projects
+      - type: boolean
+        name: hidden
+        label: Hidden
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: category
+        label: Category
+      - type: string
+        name: author
+        label: Author
+      - type: boolean
+        name: externalLink
+        label: External Link
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
